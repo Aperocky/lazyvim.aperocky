@@ -10,6 +10,12 @@
 -- Auto-open Neotree on startup
 vim.api.nvim_create_autocmd("VimEnter", {
   callback = function()
-    vim.cmd("Neotree")
+    -- Get the arguments passed to nvim
+    local args = vim.fn.argv()
+
+    -- Check if there's exactly one argument and it's "."
+    if #args == 1 and args[1] == "." then
+      vim.cmd("Neotree focus")
+    end
   end,
 })
