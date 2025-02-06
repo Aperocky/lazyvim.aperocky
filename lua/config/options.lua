@@ -11,3 +11,6 @@ opt.expandtab = true -- Use spaces instead of tabs
 opt.wrap = true -- Enable line wrapping
 opt.linebreak = true -- Wrap lines at convenient points
 opt.hlsearch = true -- Highlight search results
+
+opt.tabstop = 4 -- 4 is sane
+opt.shiftwidth = 4
