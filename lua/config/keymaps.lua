@@ -9,3 +9,5 @@ vim.keymap.del("n", "s")
 vim.keymap.set("n", "<C-s>", function()
   require("flash").jump()
 end, { desc = "Flash" })
+
+vim.keymap.set("n", "gl", vim.diagnostic.open_float, { desc = "Show line diagnostics" })
